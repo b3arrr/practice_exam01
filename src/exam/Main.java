@@ -1,5 +1,7 @@
 package exam;
 import javax.swing.JOptionPane;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         int[] numbers = {-3, 41, 5, -3, 2, 49, 5 ,5};
@@ -33,7 +35,8 @@ public class Main {
 
 
         //oppgave 5
-
+        ArrayList<Bok> bokListe = new ArrayList<>();
+        Papirbok lotr = new Papirbok("Lord Of The rings", "Tolkien", 5.1, 1231252 );
 
     }
 
