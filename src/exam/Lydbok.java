@@ -9,7 +9,7 @@ public class Lydbok extends Bok {
     }
     @Override
     public String toString() {
-        return lengdeminutter + super.toString();
+        return super.toString() + "\tlengde = " + lengdeminutter;
     }
 }
 

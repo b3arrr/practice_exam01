@@ -9,6 +9,6 @@ public class Papirbok extends Bok  {
     }
     @Override
     public String toString() {
-        return ISBN + super.toString();
+        return super.toString() + "\tISBN = " + ISBN;
     }
 }

@@ -37,7 +37,12 @@ public class Main {
         //oppgave 5
         ArrayList<Bok> bokListe = new ArrayList<>();
         Papirbok lotr = new Papirbok("Lord Of The rings", "Tolkien", 5.1, 1231252 );
-
+        Lydbok potter = new Lydbok("Harry Potter", "jk, rowling", 50.0, 130);
+        bokListe.add(lotr);
+        bokListe.add(potter);
+        for (Bok enbok : bokListe) {
+            System.out.println(enbok);
+        }
     }
 
 
