@@ -1,10 +1,11 @@
 package exam;
+
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {-3, 41, 5, -3, 2, 49, 5 ,5};
+        int[] numbers = {-3, 41, 5, -3, 2, 49, 5, 5};
         //oppgave 1
 
 
@@ -26,7 +27,6 @@ public class Main {
         bmiCalculator(weight, height);*/
 
 
-
         //oppgave 4
         /*int c = 32;
         int f = 110;
@@ -36,7 +36,7 @@ public class Main {
 
         //oppgave 5
         ArrayList<Bok> bokListe = new ArrayList<>();
-        Papirbok lotr = new Papirbok("Lord Of The rings", "Tolkien", 5.1, 1231252 );
+        Papirbok lotr = new Papirbok("Lord Of The rings", "Tolkien", 5.1, 1231252);
         Lydbok potter = new Lydbok("Harry Potter", "jk, rowling", 50.0, 130);
         bokListe.add(lotr);
         bokListe.add(potter);
@@ -46,54 +46,23 @@ public class Main {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static void bmiCalculator(String sWeight, String sHeight) {
         int weight = 0;
         double height = 0;
         try {
-             weight = Integer.parseInt(sWeight);
-             height = Double.parseDouble(sHeight);
-        }
-        catch (NumberFormatException e) {
+            weight = Integer.parseInt(sWeight);
+            height = Double.parseDouble(sHeight);
+        } catch (NumberFormatException e) {
             System.out.println("invalid, not a number");
             return;
         }
-        double bmi = (1.3 * weight) / Math.pow((height/100),2.5);
+        double bmi = (1.3 * weight) / Math.pow((height / 100), 2.5);
 
         System.out.println(bmi);
         int bmiInt = (int) bmi;
         long bmiRounded = Math.round(bmi);
-        JOptionPane.showMessageDialog(null,"BMI is "+bmiRounded);
+        JOptionPane.showMessageDialog(null, "BMI is " + bmiRounded);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     public static void numbersOverTen(int[] array) {

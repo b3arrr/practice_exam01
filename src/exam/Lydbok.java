@@ -7,6 +7,7 @@ public class Lydbok extends Bok {
         super(tittel, forfatter, pris);
         this.lengdeminutter = lengdeminutter;
     }
+
     @Override
     public String toString() {
         return super.toString() + "\tlengde = " + lengdeminutter;
